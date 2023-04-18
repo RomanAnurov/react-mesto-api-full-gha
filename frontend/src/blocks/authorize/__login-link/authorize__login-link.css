@@ -1,0 +1,13 @@
+.authorize__login-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.authorize__login-link:hover {
+  opacity: 0.6;
+  transition: 0.4s opacity;
+}

@@ -1,0 +1,11 @@
+.elements__foto {
+  width: 100%;
+  min-height: 282px;
+  max-height: 282px;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+  background-color: black;
+}
+
+

@@ -1,0 +1,21 @@
+.profile__avatar-edit {
+  background-image: url(../../../images/karandash.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.568);
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.profile__avatar-edit:hover {
+  opacity: 0.8;
+  transition: 0.3s opacity linear;
+
+}

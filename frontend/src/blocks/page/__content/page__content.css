@@ -1,0 +1,27 @@
+.page__content {
+  margin: 0 auto;
+  max-width: 880px;
+  min-width: 320px;
+}
+
+@media screen and (max-width:1024px) {
+  .page__content {
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width:795px) {
+  .page__content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+}
+
+
+@media screen and (max-width:425px) {
+  .page__content {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}

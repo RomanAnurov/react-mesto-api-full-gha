@@ -1,0 +1,11 @@
+.header__link-out {
+  margin-left: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #A9A9A9;
+  cursor: pointer;
+}

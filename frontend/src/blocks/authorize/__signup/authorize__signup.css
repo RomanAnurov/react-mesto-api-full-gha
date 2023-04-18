@@ -1,0 +1,9 @@
+.authorize__signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorize__signup p {
+  margin: 0 12px 0 0;
+}

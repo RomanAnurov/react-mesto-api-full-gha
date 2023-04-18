@@ -1,0 +1,11 @@
+.elements {
+  /*min-height: 33vh;*/
+  display: grid;
+  justify-content: center;
+  grid-template-columns:  repeat(auto-fit, 282px);
+  gap: 20px 17px;
+  grid-auto-rows: 1fr;
+}
+
+
+

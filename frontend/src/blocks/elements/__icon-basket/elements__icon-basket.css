@@ -1,0 +1,19 @@
+.elements__icon-basket {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url(../../../images/basket-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 19px;
+  width: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.elements__icon-basket:hover {
+  opacity: 0.8;
+  transition: 0.3s opacity;
+  
+}
+
