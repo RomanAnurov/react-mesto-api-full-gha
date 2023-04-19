@@ -11,8 +11,7 @@ export const register = (email, password) => {
   return fetch(`${BASE__URL}/signup`, {
     method: "POST",
     headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
+       "Content-Type": "application/json",
     },
     body: JSON.stringify({ email, password }),
   }).then(getResponse);
@@ -22,7 +21,6 @@ export const login = (email, password) => {
   return fetch(`${BASE__URL}/signin`, {
     method: "POST",
     headers: {
-      Accept: "application/json",
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ email, password }),
@@ -38,8 +36,7 @@ export const chekToken = (jwt) => {
   return fetch(`${BASE__URL}/users/me`, {
     method: "GET",
     headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
+       "Content-Type": "application/json",
       authorization: `Bearer ${jwt}`,
     },
   })
