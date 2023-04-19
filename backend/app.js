@@ -44,7 +44,7 @@ const { PORT = 3000 } = process.env;
 app.listen(3000, () => {
   console.log(`Listing on port ${PORT}`);
 });
-console.log(process.env);
+
 app.use(auth);
 app.use('/users', userRouter);
 app.use('/cards', cardRouter);

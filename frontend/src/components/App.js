@@ -52,7 +52,7 @@ function App() {
             email: data.email,
           }));
           setIsLoggedIn(true);
-          navigate('/', {replace: true});
+          navigate('/');
         })
         .catch((err) => {
           console.log(`Ошибка.....: ${err}`);
@@ -188,7 +188,7 @@ function App() {
         setRegistedTooltipStatus("success");
         setRegistedTooltipOpen(true);
 
-        navigate("/sign-in", {replace: true}); 
+        navigate("/sign-in"); 
       })
       .catch((err) => {
         setRegistedTooltipStatus("error");
