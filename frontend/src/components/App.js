@@ -188,7 +188,7 @@ function App() {
         setRegistedTooltipStatus("success");
         setRegistedTooltipOpen(true);
 
-        navigate("/sign-in");
+        navigate("/sign-in", {replace: true}); 
       })
       .catch((err) => {
         setRegistedTooltipStatus("error");
@@ -205,7 +205,7 @@ function App() {
         if (data.token) {
           localStorage.setItem("jwt", data.token);
           setIsLoggedIn(true);
-          navigate("/");
+          navigate("/", {replace: true});
         }
       })
       .catch((err) => {

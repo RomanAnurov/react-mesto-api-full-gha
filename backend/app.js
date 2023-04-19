@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -42,6 +44,7 @@ const { PORT = 3000 } = process.env;
 app.listen(3000, () => {
   console.log(`Listing on port ${PORT}`);
 });
+console.log(process.env);
 app.use(auth);
 app.use('/users', userRouter);
 app.use('/cards', cardRouter);
