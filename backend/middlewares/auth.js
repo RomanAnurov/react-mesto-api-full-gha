@@ -10,11 +10,12 @@ module.exports = (req, res, next) => {
   }
 
   const token = authorization.replace('Bearer ', '');
+  const { JWT_SECRET, NODE_ENV } = process.env;
   let payload;
 
   try {
     // попытаемся верифицировать токен
-    payload = jwt.verify(token, 'some-secret-key');
+    payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'secret-token');
   } catch (err) {
     // отправим ошибку, если не получилось
     next(new AuthError('Необходима авторизация'));

@@ -11,6 +11,7 @@ const { loginValidation, createUserValidation } = require('./middlewares/celebra
 const auth = require('./middlewares/auth');
 const NotFoundError = require('./errors/NotFoundError');
 const cors = require('./middlewares/cors');
+require('dotenv').config();
 
 const app = express();
 
