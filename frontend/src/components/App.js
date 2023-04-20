@@ -42,7 +42,7 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const jwt = localStorage.getItem("jwt");
+    const jwt = localStorage.getItem('token');
     if (jwt) {
       auth
         .chekToken(jwt)
@@ -187,7 +187,6 @@ function App() {
       .then(() => {
         setRegistedTooltipStatus("success");
         setRegistedTooltipOpen(true);
-
         navigate("/sign-in"); 
       })
       .catch((err) => {
@@ -205,7 +204,7 @@ function App() {
         if (data.token) {
           localStorage.setItem("jwt", data.token);
           setIsLoggedIn(true);
-          navigate("/", {replace: true});
+          navigate("/");
         }
       })
       .catch((err) => {
@@ -218,7 +217,7 @@ function App() {
   }
 
   function userOut() {
-    localStorage.removeItem("jwt");
+    localStorage.removeItem("token");
     setIsLoggedIn(false);
   }
 

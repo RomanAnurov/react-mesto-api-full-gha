@@ -39,9 +39,9 @@ app.get('/crash-test', () => {
 app.post('/signin', loginValidation, login);
 app.post('/signup', createUserValidation, createUser);
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log(`Listing on port ${PORT}`);
 });
 
