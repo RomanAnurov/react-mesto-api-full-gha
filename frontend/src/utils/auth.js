@@ -1,4 +1,4 @@
-export const BASE__URL = "https://anurovbackmesto.nomoredomains.monster add -A";
+export const BASE__URL = "https://anurovbackmesto.nomoredomains.monster";
 
 const getResponse = (res) => {
   if (res.ok) {
