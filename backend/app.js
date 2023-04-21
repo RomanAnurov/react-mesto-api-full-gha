@@ -1,4 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies */
+// eslint-disable-next-line import/no-extraneous-dependencies
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -11,7 +12,6 @@ const { loginValidation, createUserValidation } = require('./middlewares/celebra
 const auth = require('./middlewares/auth');
 const NotFoundError = require('./errors/NotFoundError');
 const cors = require('./middlewares/cors');
-require('dotenv').config();
 
 const app = express();
 
