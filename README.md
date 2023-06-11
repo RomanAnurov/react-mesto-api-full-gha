@@ -6,13 +6,13 @@
   
 ## Технологии:
 
-HTML 5
-CSS 3
-JavaScript
-React
-API
-NodeJS
-MongoDB
+* HTML 5
+* CSS 3
+* JavaScript
+* React
+* API
+* NodeJS
+* MongoDB
   
 
 Адрес репозитория: https://github.com/RomanAnurov/react-mesto-api-full-gha
